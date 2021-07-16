@@ -1,8 +1,7 @@
 import React from 'react'
-import HeroSection from "../hero-section/HeroSection"
 import './Layout.scss'
 
-function Layout() {
+function Layout(props) {
  return (
   <div className='appLayout'>
    {/* 
@@ -10,7 +9,7 @@ function Layout() {
 
     This layout represents the main Artboard in Figma (mobile screen 375x812) and this layout will contain the max-width and all those styling to prevent frombreaking in larger screens.
    */}
-         
+  {props.children}
   </div>
  )
 }

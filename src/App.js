@@ -7,9 +7,9 @@ import Layout from "./components/app-layout/Layout"
 
 function App() {
   return (
-    <div className="app">
-      <Layout/>
-    </div>
+    <Layout className="app">
+      <h1>One port</h1>
+    </Layout>
   );
 }
 
