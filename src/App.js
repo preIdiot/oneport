@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss';
+import Layout from "./components/app-layout/Layout"
+
+// Component imports goes below this comment
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Layout/>
     </div>
   );
 }
 
 export default App;
+
+
+
+//import 'boxicons' - import the component whenever or wherever the icons are used
+
+// The library has been installed as a dev dependency for easy access. Use the <i class="bx bxl-example"></i> font format instead of <box-icon></box-icon> element for easy updates in data.js and styling
