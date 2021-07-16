@@ -1,14 +1,21 @@
 import React from 'react'
 import './Button.scss'
 
-function Button() {
+import 'boxicons'
+
+
+function Button({Icon, Type, Title, Link}) {
+
  return (
   <div className='button'>
-   {/* 
-    This is the button component and the button is what we see in Figma - Instagram, Facebook, GitHub etc.
-
-    This will contain only one button element with some props, so that we can dynamically change content using props and fetch data from data.js
-   */}
+   <a href={Link} rel="noopener noreferrer" target="_blank">
+    <div className="buttonContainer">
+     <box-icon type={Type} name={Icon}></box-icon>
+     <div className='button-name'>
+      <p>{Title}</p>
+     </div>
+    </div>
+   </a>
   </div>
  )
 }

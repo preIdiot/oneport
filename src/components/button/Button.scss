@@ -1,0 +1,43 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+
+.button {
+ font-family: 'Work Sans', sans-serif;
+ width: 100%;
+ background-color: transparent;
+ margin-bottom: 0.75rem;
+ border: $button-border;
+ padding: $button-padding;
+ 
+ &:last-child {
+  margin-bottom: 0;
+ }
+ 
+ &:focus {
+  color: $wannabe-white;
+ }
+ 
+ a{
+  @include aTag-resets;
+ }
+ 
+ &Container {
+  display: flex;
+  align-items: center;
+  
+  .button-name {
+   margin: 0 auto;
+   transform: translateX(-16%);
+   font-size: $p-400;
+   color: $black;
+   text-decoration: none;
+  }
+ 
+  box-icon {
+   fill: $black;
+   width: 1.5rem;
+   height: 1.5rem;
+  }
+ }
+}

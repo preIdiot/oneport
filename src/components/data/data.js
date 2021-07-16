@@ -1,28 +1,37 @@
 export const buttonData = [
  {
   id : 1,
-  icon : "instagram", // Change this with icon className
-  name : "Instagram",
-  link : ""
+  icon : "instagram-alt", // Change this with icon className
+  type : "logo",
+  title : "Instagram",
+  link : "https://www.instagram.com",
  },
  {
   id : 2,
-  name : "Facebook",
+  icon : "facebook",
+  type : "logo",
+  title : "Facebook",
   link : ""
  },
  {
   id : 3,
-  name : "GitHub",
+  icon : "github",
+  type : "logo",
+  title : "GitHub",
   link : ""
  },
  {
   id : 4,
-  name : "LinkedIn",
+  icon : "linkedin",
+  type : "logo",
+  title : "LinkedIn",
   link : ""
  },
  {
   id : 5,
-  name : "Personal Website",
+  icon : "link",
+  type : "",
+  title : "Personal Website",
   link : ""
  }
  // Add more array objects if needed more links, the component will automatically update and create it fetching data from this array

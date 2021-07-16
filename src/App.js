@@ -1,14 +1,15 @@
 import React from 'react'
-import './App.scss';
-import Layout from "./components/app-layout/Layout"
+import './App.scss'
 
 // Component imports goes below this comment
+import Layout from "./components/app-layout/Layout"
+import LinkSection from "./components/link-section/LinkSection"
 
 
 function App() {
   return (
     <Layout className="app">
-      <h1>One port</h1>
+      <LinkSection />
     </Layout>
   );
 }
