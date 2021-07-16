@@ -3,20 +3,19 @@ import './App.scss'
 
 // Component imports goes below this comment
 import Layout from "./components/app-layout/Layout"
+import HeroSection from "./components/hero-section/HeroSection"
 import LinkSection from "./components/link-section/LinkSection"
 
-
 function App() {
-  return (
-    <Layout className="app">
-      <LinkSection />
-    </Layout>
-  );
+	return (
+		<Layout className="app">
+			<HeroSection />
+			<LinkSection />
+		</Layout>
+	);
 }
 
 export default App;
-
-
 
 //import 'boxicons' - import the component whenever or wherever the icons are used
 

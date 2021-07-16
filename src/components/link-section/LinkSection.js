@@ -1,5 +1,5 @@
-import React from 'react'
-import './LinkSection.scss'
+import React from "react";
+import "./LinkSection.scss";
 
 import LinkContainer from '../link-container/LinkContainer'
 
@@ -15,4 +15,4 @@ function LinkSection() {
  )
 }
 
-export default LinkSection
+export default LinkSection;
