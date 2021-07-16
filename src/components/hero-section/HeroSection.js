@@ -21,7 +21,7 @@ function HeroSection() {
 
 					<div className="heroHeader">
 						<p className="heroHeader__name">@lewisorlando</p>
-						<p className="heroHeader__disc">
+						<p className="heroHeader__desc">
 							Fulltime Backend Engineer at IBM and a passionate photographer
 							based in LA.
 						</p>
