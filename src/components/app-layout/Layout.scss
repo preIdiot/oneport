@@ -1,0 +1,10 @@
+@import "/src/styles/variables";
+@import "/src/styles/mixins";
+
+.appLayout {
+	margin: 0 auto;
+	padding: $layout-padding;
+	max-width: $layout-width;
+	max-height: 100vh;
+	@include layout-center;
+}

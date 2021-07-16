@@ -1,21 +1,21 @@
-import React from 'react'
-import './App.scss';
-import Layout from "./components/app-layout/Layout"
+import React from "react";
+import "./App.scss";
+import Layout from "./components/app-layout/Layout";
+import HeroSection from "./components/hero-section/HeroSection";
+import LinkSection from "./components/link-section/LinkSection";
 
 // Component imports goes below this comment
 
-
 function App() {
-  return (
-    <div className="app">
-      <Layout/>
-    </div>
-  );
+	return (
+		<Layout className="app">
+			<HeroSection />
+			<LinkSection />
+		</Layout>
+	);
 }
 
 export default App;
-
-
 
 //import 'boxicons' - import the component whenever or wherever the icons are used
 

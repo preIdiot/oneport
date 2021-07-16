@@ -11,8 +11,10 @@ import "./MainNavigation.scss";
 function MainNavigation() {
 	return (
 		<div className="mainNavigation">
-			<p className="mainNavigation__links">Links</p>
-			<p className="mainNavigation__posts">Posts</p>
+			<div className="mainNavigation__navSection">
+				<button className="navSection__links">Links</button>
+				<button className="navSection__posts">Posts</button>
+			</div>
 			<div className="mainNavigation__borderBottom">
 				<div className="borderBottom__activeLine"></div>
 				<div className="borderBottom__defaultLine"></div>

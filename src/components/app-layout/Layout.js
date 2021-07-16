@@ -1,6 +1,4 @@
 import React from "react";
-import HeroSection from "../hero-section/HeroSection";
-import LinkSection from "../link-section/LinkSection";
 import "./Layout.scss";
 
 /**
@@ -10,13 +8,8 @@ import "./Layout.scss";
  * @returns 
  */
 
-function Layout() {
-	return (
-		<div className="appLayout">
-			<HeroSection />
-			<LinkSection />
-		</div>
-	);
+function Layout(props) {
+	return <div className="appLayout">{props.children}</div>;
 }
 
 export default Layout;
