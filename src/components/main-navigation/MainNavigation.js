@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MainNavigation.scss";
 
 /**
@@ -9,14 +9,29 @@ import "./MainNavigation.scss";
  */
 
 function MainNavigation() {
+
+	const [activeNav, setActiveNav] = useState(1)
+	
+	const activeTab = (id) => {
+		setActiveNav(id)
+	}
+
 	return (
 		<div className="mainNavigation">
 			<div className="mainNavigation__navSection">
-				<button className="navSection__links">Links</button>
-				<button className="navSection__posts">Posts</button>
+				<button 
+					onClick={() => activeTab(1)} 
+					className={activeNav === 1 ? "navSection__links active" : "navSection__links"}>
+						Links
+				</button>
+				<button 
+					onClick={() => activeTab(2)} 
+					className={activeNav === 2 ? "navSection__posts active" : "navSection__posts"}>
+						Posts
+				</button>
 			</div>
 			<div className="mainNavigation__borderBottom">
-				<div className="borderBottom__activeLine"></div>
+				{/* <div className="borderBottom__activeLine"></div> */}
 				<div className="borderBottom__defaultLine"></div>
 			</div>
 		</div>

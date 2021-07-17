@@ -1,9 +1,11 @@
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
 .mainNavigation {
 	width: 100%;
 	height: 30px;
 	margin-top: 40px;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .mainNavigation__navSection {
@@ -37,14 +39,22 @@
 	width: 100%;
 }
 
-.borderBottom__activeLine {
-	z-index: 2;
-	position: absolute;
-	width: 50%;
-	border: 1px solid #242829;
-}
+// .borderBottom__activeLine {
+// 	z-index: 2;
+// 	position: absolute;
+// 	width: 50%;
+// 	border: 1px solid #242829;
+// }
 .borderBottom__defaultLine {
 	position: absolute;
 	width: 100%;
 	border-bottom: 1px solid #dfdddd;
+}
+
+.active {
+	z-index: 2;
+	border-bottom: 1px solid $black;
+	transform: translateY(4%);
+	transition: 100ms ease-in;
+	font-weight: $semi-bold;
 }
