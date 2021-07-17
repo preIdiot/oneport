@@ -1,16 +1,16 @@
-import React from 'react'
-import './App.scss'
+import React from "react";
+import "./App.scss";
 
 // Component imports goes below this comment
-import Layout from "./components/app-layout/Layout"
-import HeroSection from "./components/hero-section/HeroSection"
-import LinkSection from "./components/link-section/LinkSection"
+import Layout from "./components/app-layout/Layout";
+import HeroSection from "./components/hero-section/HeroSection";
+import MainSection from "./components/main-section/MainSection";
 
 function App() {
 	return (
 		<Layout className="app">
 			<HeroSection />
-			<LinkSection />
+			<MainSection />
 		</Layout>
 	);
 }
