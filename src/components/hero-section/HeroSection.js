@@ -1,13 +1,13 @@
 import React from "react";
 import "./HeroSection.scss";
 import profileImage from "../../assets/manOnLedge.jpg";
-import MainNavigation from "../main-navigation/MainNavigation";
 
 /**
- *  This is the heroSection Frame in Figma, this component will contain the heroContent (the big image, the bold username and the description)
-
-    Make sure to import mainNavigation component here because that also comes inside the heroSection Frame.
- * @returns 
+ * @description This is the heroSection Frame in Figma,
+ * this component will contain the heroContent
+ * (the big image, the bold username and the description).
+ * Make sure to import mainNavigation component here because
+ * that also comes inside the heroSection Frame.
  */
 
 function HeroSection() {
@@ -27,8 +27,6 @@ function HeroSection() {
 						</p>
 					</div>
 				</div>
-
-				<MainNavigation />
 			</div>
 		</div>
 	);
