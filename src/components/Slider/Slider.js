@@ -144,15 +144,20 @@ const setPositionByIndex = (index = currentIndex) => {
  * @description update slides position in the dom
  */
 const setSliderPosition = () => {
-	slider.style.transform = `translateX(${currentTranslate}px)`;
-
 	let borderPos =
 		borderBottom.offsetWidth * (-currentTranslate / slider.offsetWidth);
+
+	// filters
+	if (currentTranslate > 0) currentTranslate = 0;
+	else if (currentTranslate < (1 - slides.length) * slider.offsetWidth)
+		currentTranslate = (1 - slides.length) * slider.offsetWidth;
 
 	if (borderPos < 0) borderPos = 0;
 	else if (borderPos > borderBottom.offsetWidth)
 		borderPos = borderBottom.offsetWidth;
 
+	// setters
+	slider.style.transform = `translateX(${currentTranslate}px)`;
 	borderBottom.style.transform = `translateX(${borderPos}px)`;
 };
 
