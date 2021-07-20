@@ -80,9 +80,9 @@ const touchEnd = () => {
 	cancelAnimationFrame(animationID);
 
 	const movedBy = currentTranslate - prevTranslate;
-	if (movedBy < -slider.offsetWidth / 2 && currentIndex < slides.length - 1)
+	if (movedBy < -slider.offsetWidth / 4 && currentIndex < slides.length - 1)
 		currentIndex++;
-	else if (movedBy > slider.offsetWidth / 2 && currentIndex > 0) currentIndex--;
+	else if (movedBy > slider.offsetWidth / 4 && currentIndex > 0) currentIndex--;
 
 	setPositionByIndex();
 };
